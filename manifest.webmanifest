@@ -1,0 +1,9 @@
+{
+  "name": "Banco de Semillas del Invernadero",
+  "short_name": "Banco Semillas",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07131f",
+  "theme_color": "#0f172a",
+  "icons": []
+}

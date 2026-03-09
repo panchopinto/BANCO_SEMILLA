@@ -1,0 +1,610 @@
+[
+  {
+    "id": "pimenton_asti_rojo",
+    "nombre": "Pimentón Asti Rojo",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/pimenton_asti_rojo.jpg",
+    "imagenInfo": "assets/seeds/back/pimenton_asti_rojo.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "pimenton_asti_amarillo",
+    "nombre": "Pimentón Asti Amarillo",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/pimenton_asti_amarillo.jpg",
+    "imagenInfo": "assets/seeds/back/pimenton_asti_amarillo.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "berros",
+    "nombre": "Berros",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/berros.jpg",
+    "imagenInfo": "assets/seeds/back/berros.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "chicoria",
+    "nombre": "Chicoria",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/chicoria.jpg",
+    "imagenInfo": "assets/seeds/back/chicoria.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "pimiento_amarillo",
+    "nombre": "Pimiento Amarillo",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/pimiento_amarillo.jpg",
+    "imagenInfo": "assets/seeds/back/pimiento_amarillo.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "tomate",
+    "nombre": "Tomate",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/tomate.jpg",
+    "imagenInfo": "assets/seeds/back/tomate.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "tomate_amarillo",
+    "nombre": "Tomate Amarillo",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/tomate_amarillo.jpg",
+    "imagenInfo": "assets/seeds/back/tomate_amarillo.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "acelga_oruga",
+    "nombre": "Acelga Oruga",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/acelga_oruga.jpg",
+    "imagenInfo": "assets/seeds/back/acelga_oruga.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "zapallo_tetsukabuto",
+    "nombre": "Zapallo Tetsukabuto",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/zapallo_tetsukabuto.jpg",
+    "imagenInfo": "assets/seeds/back/zapallo_tetsukabuto.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "zapallo_tetsukabuto_2",
+    "nombre": "Zapallo Tetsukabuto",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/zapallo_tetsukabuto_2.jpg",
+    "imagenInfo": "assets/seeds/back/zapallo_tetsukabuto_2.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "kale_rizado",
+    "nombre": "Kale Rizado",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/kale_rizado.jpg",
+    "imagenInfo": "assets/seeds/back/kale_rizado.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "perejil_liso",
+    "nombre": "Perejil Liso",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/perejil_liso.jpg",
+    "imagenInfo": "assets/seeds/back/perejil_liso.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "brocoli",
+    "nombre": "Brócoli",
+    "categoria": "Inflorescencia",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/brocoli.jpg",
+    "imagenInfo": "assets/seeds/back/brocoli.jpg",
+    "proyecto": "Permite observar formación de cabezas o capítulos y requerimientos de clima fresco.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "oregano",
+    "nombre": "Orégano",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/oregano.jpg",
+    "imagenInfo": "assets/seeds/back/oregano.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "repollo",
+    "nombre": "Repollo",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/repollo.jpg",
+    "imagenInfo": "assets/seeds/back/repollo.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "puerro",
+    "nombre": "Puerro",
+    "categoria": "Bulbo/Tallo",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/puerro.jpg",
+    "imagenInfo": "assets/seeds/back/puerro.jpg",
+    "proyecto": "Se puede investigar elongación, grosor, manejo hídrico y cosecha escalonada.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "albahaca_enana",
+    "nombre": "Albahaca Enana",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/albahaca_enana.jpg",
+    "imagenInfo": "assets/seeds/back/albahaca_enana.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "aji_rojo_largo",
+    "nombre": "Ají Rojo Largo",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/aji_rojo_largo.jpg",
+    "imagenInfo": "assets/seeds/back/aji_rojo_largo.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "pepino",
+    "nombre": "Pepino",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/pepino.jpg",
+    "imagenInfo": "assets/seeds/back/pepino.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "eneldo",
+    "nombre": "Eneldo",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/eneldo.jpg",
+    "imagenInfo": "assets/seeds/back/eneldo.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "lechuga",
+    "nombre": "Lechuga",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/lechuga.jpg",
+    "imagenInfo": "assets/seeds/back/lechuga.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "berenjena",
+    "nombre": "Berenjena",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/berenjena.jpg",
+    "imagenInfo": "assets/seeds/back/berenjena.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "albahaca_morada",
+    "nombre": "Albahaca Morada",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/albahaca_morada.jpg",
+    "imagenInfo": "assets/seeds/back/albahaca_morada.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "ruda",
+    "nombre": "Ruda",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/ruda.jpg",
+    "imagenInfo": "assets/seeds/back/ruda.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "melisa",
+    "nombre": "Melisa",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/melisa.jpg",
+    "imagenInfo": "assets/seeds/back/melisa.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "espinaca",
+    "nombre": "Espinaca",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/espinaca.jpg",
+    "imagenInfo": "assets/seeds/back/espinaca.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "salvia",
+    "nombre": "Salvia",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/salvia.jpg",
+    "imagenInfo": "assets/seeds/back/salvia.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "physalis",
+    "nombre": "Physalis",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/physalis.jpg",
+    "imagenInfo": "assets/seeds/back/physalis.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "menta_piperita",
+    "nombre": "Menta Piperita",
+    "categoria": "Aromática",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/menta_piperita.jpg",
+    "imagenInfo": "assets/seeds/back/menta_piperita.jpg",
+    "proyecto": "Excelente para proyectos de propagación, aroma, sanidad y uso medicinal/culinario.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "tomate_riñon",
+    "nombre": "Tomate Riñón",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/tomate_riñon.jpg",
+    "imagenInfo": "assets/seeds/back/tomate_riñon.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "tomate_pera",
+    "nombre": "Tomate Pera",
+    "categoria": "Fruto/Hortaliza",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/tomate_pera.jpg",
+    "imagenInfo": "assets/seeds/back/tomate_pera.jpg",
+    "proyecto": "Ideal para seguimiento de floración, cuaja, desarrollo de fruto y cosecha.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "lechuga_morada",
+    "nombre": "Lechuga Morada",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/lechuga_morada.jpg",
+    "imagenInfo": "assets/seeds/back/lechuga_morada.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "lechuga_verde",
+    "nombre": "Lechuga Verde",
+    "categoria": "Hoja",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/lechuga_verde.jpg",
+    "imagenInfo": "assets/seeds/back/lechuga_verde.jpg",
+    "proyecto": "Muy útil para medir germinación, velocidad de crecimiento foliar y respuesta al riego.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "alcachofa",
+    "nombre": "Alcachofa",
+    "categoria": "Inflorescencia",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/alcachofa.jpg",
+    "imagenInfo": "assets/seeds/back/alcachofa.jpg",
+    "proyecto": "Permite observar formación de cabezas o capítulos y requerimientos de clima fresco.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "manzanilla",
+    "nombre": "Manzanilla",
+    "categoria": "Medicinal/Flor",
+    "dificultad": "Baja",
+    "imagen": "assets/seeds/front/manzanilla.jpg",
+    "imagenInfo": "assets/seeds/back/manzanilla.jpg",
+    "proyecto": "Aporta al estudio de floración, polinizadores y usos tradicionales.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": false,
+      "floracion": true,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "betarraga_detroit",
+    "nombre": "Betarraga Detroit",
+    "categoria": "Raíz",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/betarraga_detroit.jpg",
+    "imagenInfo": "assets/seeds/back/betarraga_detroit.jpg",
+    "proyecto": "Apropiada para investigar crecimiento subterráneo, sustrato y uniformidad.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "cebolla_valenciana",
+    "nombre": "Cebolla Valenciana",
+    "categoria": "Bulbo/Tallo",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/cebolla_valenciana.jpg",
+    "imagenInfo": "assets/seeds/back/cebolla_valenciana.jpg",
+    "proyecto": "Se puede investigar elongación, grosor, manejo hídrico y cosecha escalonada.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  },
+  {
+    "id": "cebollin",
+    "nombre": "Cebollín",
+    "categoria": "Bulbo/Tallo",
+    "dificultad": "Media",
+    "imagen": "assets/seeds/front/cebollin.jpg",
+    "imagenInfo": "assets/seeds/back/cebollin.jpg",
+    "proyecto": "Se puede investigar elongación, grosor, manejo hídrico y cosecha escalonada.",
+    "focoInvestigacion": {
+      "germinacion": true,
+      "crecimiento": true,
+      "trasplante": true,
+      "floracion": false,
+      "cosecha": true
+    }
+  }
+]

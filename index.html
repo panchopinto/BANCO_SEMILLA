@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banco de Semillas del Invernadero</title>
+  <meta name="description" content="Banco de semillas escolar para seguimiento, investigación y aprendizaje en el invernadero." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-badge">🌱</div>
+        <div>
+          <p class="eyebrow">Proyecto educativo para alumnos</p>
+          <h1>Banco de Semillas del Invernadero</h1>
+          <p class="lede">Catálogo visual, seguimiento de cultivos, registro experimental y exportación de datos para investigación escolar.</p>
+        </div>
+      </div>
+
+      <div class="toolbar" aria-label="Controles inclusivos">
+        <button id="themeToggle" class="tool-btn" type="button">🌓 Tema</button>
+        <button id="fontPlus" class="tool-btn" type="button">A+</button>
+        <button id="fontMinus" class="tool-btn" type="button">A−</button>
+        <button id="readPage" class="tool-btn" type="button">🗣️ Leer</button>
+        <button id="stopRead" class="tool-btn" type="button">⏹️ Detener</button>
+      </div>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#catalogo">📚 Catálogo</a>
+        <a href="#seguimiento">📈 Seguimiento</a>
+        <a href="#bitacora">🧪 Bitácora</a>
+        <a href="#investigacion">🔬 Investigación</a>
+        <a href="#guia">👩‍🏫 Guía docente</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-card accent">
+        <h2>Un sitio listo para GitHub Pages</h2>
+        <p>Este banco permite organizar especies del invernadero, seleccionar semillas para proyectos, registrar observaciones y exportar evidencias de aprendizaje.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#catalogo">Ver banco</a>
+          <a class="cta secondary" href="#bitacora">Registrar observación</a>
+        </div>
+      </div>
+      <div class="hero-grid">
+        <article class="mini-stat"><strong id="seedCount">0</strong><span>especies registradas</span></article>
+        <article class="mini-stat"><strong>5</strong><span>etapas sugeridas</span></article>
+        <article class="mini-stat"><strong>CSV</strong><span>exportación local</span></article>
+        <article class="mini-stat"><strong>PWA</strong><span>uso desde celular</span></article>
+      </div>
+    </section>
+
+    <section id="catalogo" class="wrap section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Banco visual</p>
+          <h2>Catálogo de semillas</h2>
+        </div>
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="Buscar semilla..." aria-label="Buscar semilla" />
+          <select id="categoryFilter" aria-label="Filtrar por categoría">
+            <option value="all">Todas las categorías</option>
+          </select>
+        </div>
+      </div>
+      <div id="seedGrid" class="seed-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="seguimiento" class="wrap section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Proceso pedagógico</p>
+          <h2>Ruta de seguimiento del cultivo</h2>
+        </div>
+      </div>
+      <div class="timeline-grid">
+        <article class="timeline-card"><span>1</span><h3>Selección</h3><p>Elegir especie, hipótesis y condiciones iniciales.</p></article>
+        <article class="timeline-card"><span>2</span><h3>Germinación</h3><p>Registrar fecha de siembra, porcentaje de emergencia y tiempo.</p></article>
+        <article class="timeline-card"><span>3</span><h3>Crecimiento</h3><p>Medir altura, hojas, vigor, color y respuesta al ambiente.</p></article>
+        <article class="timeline-card"><span>4</span><h3>Floración / Desarrollo</h3><p>Observar aparición de flores, fruto, cabezas o estructuras comerciales.</p></article>
+        <article class="timeline-card"><span>5</span><h3>Cosecha y análisis</h3><p>Comparar resultados, documentar evidencias y reflexionar.</p></article>
+      </div>
+    </section>
+
+    <section id="bitacora" class="wrap section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Registro estudiantil</p>
+          <h2>Bitácora de observación</h2>
+        </div>
+      </div>
+      <form id="logForm" class="panel form-grid">
+        <label>
+          Curso / grupo
+          <input name="curso" required placeholder="Ej: 2° medio A" />
+        </label>
+        <label>
+          Equipo o estudiante
+          <input name="equipo" required placeholder="Ej: Equipo Germinación 1" />
+        </label>
+        <label>
+          Semilla
+          <select name="semilla" id="seedSelect" required></select>
+        </label>
+        <label>
+          Fecha
+          <input name="fecha" type="date" required />
+        </label>
+        <label>
+          Etapa
+          <select name="etapa" required>
+            <option>Selección</option>
+            <option>Germinación</option>
+            <option>Crecimiento</option>
+            <option>Floración/Desarrollo</option>
+            <option>Cosecha</option>
+          </select>
+        </label>
+        <label>
+          Altura (cm)
+          <input name="altura" type="number" min="0" step="0.1" placeholder="0.0" />
+        </label>
+        <label>
+          Nº de hojas
+          <input name="hojas" type="number" min="0" step="1" placeholder="0" />
+        </label>
+        <label>
+          Estado general
+          <select name="estado">
+            <option>Excelente</option>
+            <option>Bueno</option>
+            <option>Regular</option>
+            <option>Débil</option>
+          </select>
+        </label>
+        <label class="full">
+          Observación científica
+          <textarea name="observacion" rows="4" placeholder="Describe cambios, color, textura, plagas, humedad, exposición solar, etc."></textarea>
+        </label>
+        <div class="actions full">
+          <button class="cta" type="submit">Guardar registro</button>
+          <button class="cta secondary" type="button" id="exportCsv">Exportar CSV</button>
+          <button class="cta secondary" type="button" id="clearLogs">Limpiar bitácora</button>
+        </div>
+      </form>
+      <div class="panel">
+        <h3>Registros guardados</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Curso</th>
+                <th>Equipo</th>
+                <th>Semilla</th>
+                <th>Etapa</th>
+                <th>Altura</th>
+                <th>Hojas</th>
+                <th>Estado</th>
+                <th>Observación</th>
+              </tr>
+            </thead>
+            <tbody id="logTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="investigacion" class="wrap section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">ABP + indagación</p>
+          <h2>Plantilla de investigación</h2>
+        </div>
+      </div>
+      <div class="research-grid">
+        <article class="panel">
+          <h3>Preguntas sugeridas</h3>
+          <ul>
+            <li>¿Qué semilla germina más rápido en el invernadero?</li>
+            <li>¿Cómo influye la frecuencia de riego en el crecimiento?</li>
+            <li>¿Qué especie responde mejor al cultivo hidropónico?</li>
+            <li>¿Qué diferencias aparecen entre sombra parcial y pleno sol?</li>
+            <li>¿Cómo cambia el desarrollo según el tipo de sustrato?</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Variables recomendadas</h3>
+          <ul>
+            <li>Variable independiente: riego, luz, sustrato, temperatura.</li>
+            <li>Variable dependiente: altura, hojas, color, floración, rendimiento.</li>
+            <li>Variables controladas: recipiente, fecha de siembra, cantidad de semillas.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Indicadores por etapa</h3>
+          <ul>
+            <li>Germinación: porcentaje y días de emergencia.</li>
+            <li>Crecimiento: altura semanal y número de hojas.</li>
+            <li>Sanidad: plagas, hongos, marchitez, clorosis.</li>
+            <li>Producción: masa, número de frutos, tamaño comercial.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="guia" class="wrap section-block">
+      <div class="panel">
+        <p class="eyebrow">Uso didáctico</p>
+        <h2>Guía rápida para docentes</h2>
+        <div class="guide-grid">
+          <div>
+            <h3>Qué permite este sitio</h3>
+            <p>Organizar el banco de semillas, mostrar fichas visuales y registrar evidencias del proceso experimental de cada curso.</p>
+          </div>
+          <div>
+            <h3>Cómo trabajar con alumnos</h3>
+            <p>Formar equipos, asignar una especie, definir hipótesis, realizar observaciones periódicas y comparar resultados entre tratamientos.</p>
+          </div>
+          <div>
+            <h3>Cómo publicar en GitHub</h3>
+            <p>Sube todos estos archivos a un repositorio y activa GitHub Pages desde la rama principal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="seedModal" class="modal">
+    <div class="modal-shell">
+      <button id="closeModal" class="close-modal" type="button" aria-label="Cerrar">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p>Banco de Semillas del Invernadero · Sitio escolar para proyectos de investigación.</p>
+      <p>Funciona con almacenamiento local del navegador para pruebas y seguimiento rápido.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
