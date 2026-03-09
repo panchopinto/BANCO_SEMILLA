@@ -1,13 +1,18 @@
 # Banco de Semillas del Invernadero
 
-Versión corregida con accesibilidad en menú tipo tuerca.
+Versión sin assets.
 
-## Controles en la tuerca
-- Tema
-- A+
-- A−
-- Leer
-- Detener
+## Mejoras incluidas
+- Menú de accesibilidad en tuerca, compacto y animado
+- Se abre y se cierra al volver a pinchar la tuerca
+- También se cierra al pinchar fuera, con Escape o al elegir una opción
+- Descripciones visibles nuevamente en cada tarjeta y en la ficha emergente
+
+## Archivos
+- index.html
+- styles.css
+- app.js
+- data.js
 
 ## Publicación
-Sube todos los archivos a GitHub y activa GitHub Pages en Settings > Pages.
+Sube estos archivos sobre tu sitio actual y conserva tu carpeta assets existente.
