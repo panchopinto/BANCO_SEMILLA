@@ -16,7 +16,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Pimentón Asti Rojo es una semilla de tipo fruto para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera–verano, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Capsicum annuum."
   },
   {
     "id": "seed-02",
@@ -35,7 +36,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Pimentón Amarillo es una semilla de tipo fruto para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera–verano, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Capsicum annuum."
   },
   {
     "id": "seed-03",
@@ -54,7 +56,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Berros es una semilla de tipo hoja para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en otoño–primavera, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Nasturtium officinale."
   },
   {
     "id": "seed-04",
@@ -73,7 +76,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Achicoria Pan de Azúcar es una semilla de tipo hoja para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en otoño–invierno, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Cichorium intybus."
   },
   {
     "id": "seed-05",
@@ -92,7 +96,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Pimentón Amarillo es una semilla de tipo fruto para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera–verano, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Capsicum annuum."
   },
   {
     "id": "seed-06",
@@ -111,7 +116,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Tomate Cala Ace es una semilla de tipo fruto para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera–verano, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Solanum lycopersicum."
   },
   {
     "id": "seed-07",
@@ -130,7 +136,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Tomate Cherry Perita Amarillo es una semilla de tipo fruto para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera–verano, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Solanum lycopersicum var. cerasiforme."
   },
   {
     "id": "seed-08",
@@ -149,7 +156,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Rúcula Cultivada es una semilla de tipo hoja para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en otoño–primavera, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Eruca sativa."
   },
   {
     "id": "seed-09",
@@ -168,7 +176,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Zapallo Cabello de Ángel es una semilla de tipo cucurbitácea para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Cucurbita ficifolia."
   },
   {
     "id": "seed-10",
@@ -187,7 +196,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Zapallo Italiano es una semilla de tipo cucurbitácea para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en primavera–verano, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie Cucurbita pepo."
   },
   {
     "id": "seed-11",
@@ -206,7 +216,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 11 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-12",
@@ -225,7 +236,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 12 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-13",
@@ -244,7 +256,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 13 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-14",
@@ -263,7 +276,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 14 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-15",
@@ -282,7 +296,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 15 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-16",
@@ -301,7 +316,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 16 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-17",
@@ -320,7 +336,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 17 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-18",
@@ -339,7 +356,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 18 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-19",
@@ -358,7 +376,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 19 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-20",
@@ -377,7 +396,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 20 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-21",
@@ -396,7 +416,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 21 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-22",
@@ -415,7 +436,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 22 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-23",
@@ -434,7 +456,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 23 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-24",
@@ -453,7 +476,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 24 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-25",
@@ -472,7 +496,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 25 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-26",
@@ -491,7 +516,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 26 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-27",
@@ -510,7 +536,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 27 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-28",
@@ -529,7 +556,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 28 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-29",
@@ -548,7 +576,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 29 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-30",
@@ -567,7 +596,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 30 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-31",
@@ -586,7 +616,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 31 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-32",
@@ -605,7 +636,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 32 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-33",
@@ -624,7 +656,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 33 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-34",
@@ -643,7 +676,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 34 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-35",
@@ -662,7 +696,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 35 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-36",
@@ -681,7 +716,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 36 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-37",
@@ -700,7 +736,8 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 37 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   },
   {
     "id": "seed-38",
@@ -719,6 +756,7 @@ window.SEED_DATA = [
       "registro fotográfico",
       "análisis de variables"
     ],
-    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica."
+    "notes": "Completar nombre y datos del sobre para mejorar la ficha pedagógica.",
+    "description": "Semilla 38 es una semilla de tipo por clasificar para seguimiento en invernadero escolar. Se puede estudiar su comportamiento en todo el año, observar germinación, crecimiento vegetativo, registro fotográfico y relacionar el cultivo con la especie especie por completar."
   }
 ];
