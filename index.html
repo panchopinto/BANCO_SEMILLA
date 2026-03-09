@@ -1,1 +1,156 @@
-<!doctype html><html lang="es" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Banco de Semillas del Invernadero</title><meta name="description" content="Sitio educativo para seguimiento e investigación del crecimiento de semillas y hortalizas en el invernadero escolar."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><header class="hero"><nav class="topbar container"><div class="brand"><div class="brand-mark">🌱</div><div><strong>Banco de Semillas</strong><small>Invernadero escolar · seguimiento e investigación</small></div></div><div class="nav-actions"><a class="ghost-btn" href="#catalogo">Catálogo</a><a class="ghost-btn" href="#bitacora">Bitácora</a><a class="ghost-btn" href="#investigacion">Investigación</a><div id="settingsWrap" class="settings-wrap"><button id="settingsToggle" class="settings-btn" aria-expanded="false" aria-controls="accessMenu" aria-label="Abrir opciones de accesibilidad">⚙️</button><div id="accessMenu" class="access-menu" hidden><button class="menu-item access-close" id="accessClose" aria-label="Cerrar opciones">✕ Cerrar</button><button class="menu-item" id="themeToggle">🌓 Tema</button><button class="menu-item" id="fontInc">A+</button><button class="menu-item" id="fontDec">A−</button><button class="menu-item" id="speakBtn">🗣️ Leer</button><button class="menu-item danger" id="stopSpeakBtn">⏹ Detener</button></div></div></div></nav><section class="container hero-grid"><div><span class="eyebrow">Proyecto pedagógico para estudiantes</span><h1>Observa, registra y compara el crecimiento de semillas en el invernadero.</h1><p class="lead">Este sitio permite organizar sobres de semillas, documentar siembra, germinación, crecimiento, floración y cosecha, y generar evidencia para actividades de ciencias, tecnología e investigación escolar.</p><div class="cta-row"><a class="primary-btn" href="#catalogo">Ver banco de semillas</a><a class="secondary-btn" href="#bitacora">Registrar observación</a></div><div class="mini-stats"><article><strong id="seedCount">0</strong><span>sobres registrados</span></article><article><strong>5</strong><span>etapas sugeridas</span></article><article><strong>CSV</strong><span>exportación local</span></article></div></div><aside class="hero-card"><h2>Etapas de seguimiento</h2><ol><li>Preparación del sustrato y siembra</li><li>Germinación y porcentaje de emergencia</li><li>Crecimiento vegetativo</li><li>Floración o desarrollo del fruto</li><li>Cosecha, peso y reflexión final</li></ol><p class="note">Sugerencia: cada equipo de estudiantes puede usar la bitácora para comparar variables como riego, luz, temperatura, altura y número de hojas.</p></aside></section></header><main><section id="catalogo" class="container section"><div class="section-head"><div><span class="eyebrow">Catálogo visual</span><h2>Banco de semillas</h2></div><div class="toolbar"><input id="searchInput" type="search" placeholder="Buscar semilla, categoría o especie..."><select id="categoryFilter"><option value="">Todas las categorías</option></select></div></div><div id="seedGrid" class="seed-grid"></div></section><section id="bitacora" class="container section"><div class="section-head"><div><span class="eyebrow">Registro de aula</span><h2>Bitácora de observación</h2></div></div><div class="form-card"><form id="logForm" class="log-form"><label>Semilla<select id="seedSelect" required></select></label><label>Equipo / curso<input id="teamInput" type="text" placeholder="Ej.: 1° Medio A · Equipo Verde" required></label><label>Fecha<input id="dateInput" type="date" required></label><label>Etapa<select id="stageInput" required><option>Siembra</option><option>Germinación</option><option>Crecimiento</option><option>Floración / desarrollo</option><option>Cosecha</option></select></label><label>Altura aproximada (cm)<input id="heightInput" type="number" min="0" step="0.1" placeholder="0.0"></label><label>Número de hojas<input id="leavesInput" type="number" min="0" step="1" placeholder="0"></label><label>Observación<textarea id="obsInput" rows="4" placeholder="Describe color, vigor, humedad, plagas, cambios observados o hipótesis del equipo."></textarea></label><div class="form-actions"><button class="primary-btn" type="submit">Guardar registro</button><button class="secondary-btn" type="button" id="exportBtn">Exportar CSV</button><button class="ghost-btn" type="button" id="clearBtn">Limpiar registros</button></div></form></div><div class="table-card"><div class="table-scroll"><table><thead><tr><th>Fecha</th><th>Semilla</th><th>Equipo</th><th>Etapa</th><th>Altura</th><th>Hojas</th><th>Observación</th></tr></thead><tbody id="logTableBody"></tbody></table></div></div></section><section id="investigacion" class="container section"><div class="section-head"><div><span class="eyebrow">Uso pedagógico</span><h2>Líneas de investigación sugeridas</h2></div></div><div class="research-grid"><article class="info-card"><h3>Comparación de germinación</h3><p>Medir cuántas semillas germinan bajo distintas condiciones de humedad, luz o profundidad de siembra.</p></article><article class="info-card"><h3>Crecimiento en el tiempo</h3><p>Registrar altura, hojas y vigor por semana para construir tablas, gráficos y conclusiones.</p></article><article class="info-card"><h3>Bitácora fotográfica</h3><p>Tomar fotografías semanales y relacionarlas con observaciones escritas y variables del entorno.</p></article><article class="info-card"><h3>Análisis interdisciplinario</h3><p>Vincular ciencias, matemática, tecnología y lenguaje mediante datos, informes y presentaciones.</p></article></div></section></main><footer class="footer"><div class="container footer-inner"><p>Banco de Semillas del Invernadero · Sitio escolar listo para GitHub Pages</p><p>Los registros se guardan localmente en el navegador. Puede conectarse más adelante a Google Sheets o Supabase.</p></div></footer><dialog id="seedDialog" class="seed-dialog"><button class="dialog-close" id="closeDialog" aria-label="Cerrar ficha">✕</button><div id="dialogContent"></div></dialog><script src="data.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Banco de Semillas del Invernadero</title>
+  <meta name="description" content="Sitio educativo para seguimiento e investigación del crecimiento de semillas y hortalizas en el invernadero escolar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar container">
+      <div class="brand">
+        <div class="brand-mark">🌱</div>
+        <div>
+          <strong>Banco de Semillas</strong>
+          <small>Invernadero escolar · seguimiento e investigación</small>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a class="ghost-btn" href="#catalogo">Catálogo</a>
+        <a class="ghost-btn" href="#bitacora">Bitácora</a>
+        <a class="ghost-btn" href="#investigacion">Investigación</a>
+        <div class="settings-wrap" id="settingsWrap">
+          <button id="settingsToggle" class="settings-btn" aria-expanded="false" aria-controls="accessMenu" aria-label="Abrir opciones de accesibilidad">⚙️</button>
+          <div id="accessMenu" class="access-menu" hidden>
+            <button class="menu-item" type="button" id="themeToggle">🌓 Tema</button>
+            <button class="menu-item" type="button" id="fontInc">A+</button>
+            <button class="menu-item" type="button" id="fontDec">A−</button>
+            <button class="menu-item" type="button" id="speakBtn">🗣️ Leer</button>
+            <button class="menu-item danger" type="button" id="stopSpeakBtn">⏹ Detener</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container hero-grid">
+      <div>
+        <span class="eyebrow">Proyecto pedagógico para estudiantes</span>
+        <h1>Observa, registra y compara el crecimiento de semillas en el invernadero.</h1>
+        <p class="lead">Este sitio permite organizar sobres de semillas, documentar siembra, germinación, crecimiento, floración y cosecha, y generar evidencia para actividades de ciencias, tecnología e investigación escolar.</p>
+        <div class="cta-row">
+          <a class="primary-btn" href="#catalogo">Ver banco de semillas</a>
+          <a class="secondary-btn" href="#bitacora">Registrar observación</a>
+        </div>
+        <div class="mini-stats">
+          <article><strong id="seedCount">0</strong><span>sobres registrados</span></article>
+          <article><strong>5</strong><span>etapas sugeridas</span></article>
+          <article><strong>CSV</strong><span>exportación local</span></article>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>Etapas de seguimiento</h2>
+        <ol>
+          <li>Preparación del sustrato y siembra</li>
+          <li>Germinación y porcentaje de emergencia</li>
+          <li>Crecimiento vegetativo</li>
+          <li>Floración o desarrollo del fruto</li>
+          <li>Cosecha, peso y reflexión final</li>
+        </ol>
+        <p class="note">Sugerencia: cada equipo de estudiantes puede usar la bitácora para comparar variables como riego, luz, temperatura, altura y número de hojas.</p>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section id="catalogo" class="container section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Catálogo visual</span>
+          <h2>Banco de semillas</h2>
+        </div>
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="Buscar semilla, categoría o especie...">
+          <select id="categoryFilter"><option value="">Todas las categorías</option></select>
+        </div>
+      </div>
+      <div id="seedGrid" class="seed-grid"></div>
+    </section>
+
+    <section id="bitacora" class="container section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Registro de aula</span>
+          <h2>Bitácora de observación</h2>
+        </div>
+      </div>
+      <div class="form-card">
+        <form id="logForm" class="log-form">
+          <label>Semilla<select id="seedSelect" required></select></label>
+          <label>Equipo / curso<input id="teamInput" type="text" placeholder="Ej.: 1° Medio A · Equipo Verde" required></label>
+          <label>Fecha<input id="dateInput" type="date" required></label>
+          <label>Etapa
+            <select id="stageInput" required>
+              <option>Siembra</option>
+              <option>Germinación</option>
+              <option>Crecimiento</option>
+              <option>Floración / desarrollo</option>
+              <option>Cosecha</option>
+            </select>
+          </label>
+          <label>Altura aproximada (cm)<input id="heightInput" type="number" min="0" step="0.1" placeholder="0.0"></label>
+          <label>Número de hojas<input id="leavesInput" type="number" min="0" step="1" placeholder="0"></label>
+          <label>Observación<textarea id="obsInput" rows="4" placeholder="Describe color, vigor, humedad, plagas, cambios observados o hipótesis del equipo."></textarea></label>
+          <div class="form-actions">
+            <button class="primary-btn" type="submit">Guardar registro</button>
+            <button class="secondary-btn" type="button" id="exportBtn">Exportar CSV</button>
+            <button class="ghost-btn" type="button" id="clearBtn">Limpiar registros</button>
+          </div>
+        </form>
+      </div>
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Fecha</th><th>Semilla</th><th>Equipo</th><th>Etapa</th><th>Altura</th><th>Hojas</th><th>Observación</th></tr>
+            </thead>
+            <tbody id="logTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="investigacion" class="container section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Uso pedagógico</span>
+          <h2>Líneas de investigación sugeridas</h2>
+        </div>
+      </div>
+      <div class="research-grid">
+        <article class="info-card"><h3>Comparación de germinación</h3><p>Medir cuántas semillas germinan bajo distintas condiciones de humedad, luz o profundidad de siembra.</p></article>
+        <article class="info-card"><h3>Crecimiento en el tiempo</h3><p>Registrar altura, hojas y vigor por semana para construir tablas, gráficos y conclusiones.</p></article>
+        <article class="info-card"><h3>Bitácora fotográfica</h3><p>Tomar fotografías semanales y relacionarlas con observaciones escritas y variables del entorno.</p></article>
+        <article class="info-card"><h3>Análisis interdisciplinario</h3><p>Vincular ciencias, matemática, tecnología y lenguaje mediante datos, informes y presentaciones.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Banco de Semillas del Invernadero · Sitio escolar listo para GitHub Pages</p>
+      <p>Los registros se guardan localmente en el navegador. Puede conectarse más adelante a Google Sheets o Supabase.</p>
+    </div>
+  </footer>
+
+  <dialog id="seedDialog" class="seed-dialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Cerrar ficha">✕</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
