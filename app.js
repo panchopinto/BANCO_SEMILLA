@@ -23,26 +23,32 @@ const clearBtn = document.getElementById("clearBtn");
 const LS_THEME = "seedbank_theme";
 const LS_SCALE = "seedbank_scale";
 const LS_LOGS = "seedbank_logs";
+const SHEETS_WEBAPP_URL = "PEGA_AQUI_TU_URL_DE_APPS_SCRIPT";
+
 let SEEDS = [];
 
 function applyTheme(t) {
   document.documentElement.setAttribute("data-theme", t);
   localStorage.setItem(LS_THEME, t);
 }
+
 function applyScale(s) {
   const n = Math.min(1.35, Math.max(0.9, Number(s)));
   document.documentElement.style.setProperty("--font-scale", n);
   localStorage.setItem(LS_SCALE, n);
 }
+
 function isMenuOpen() {
   return settingsWrap?.classList.contains("menu-open");
 }
+
 function openAccessMenu() {
   if (!settingsWrap || !accessMenu || !settingsToggle) return;
   settingsWrap.classList.add("menu-open");
   accessMenu.hidden = false;
   settingsToggle.setAttribute("aria-expanded", "true");
 }
+
 function closeAccessMenu() {
   if (!settingsWrap || !accessMenu || !settingsToggle) return;
   settingsWrap.classList.remove("menu-open");
@@ -51,9 +57,11 @@ function closeAccessMenu() {
     if (!isMenuOpen()) accessMenu.hidden = true;
   }, 180);
 }
+
 function toggleAccessMenu() {
   isMenuOpen() ? closeAccessMenu() : openAccessMenu();
 }
+
 function runAndClose(fn) {
   return () => {
     fn();
@@ -69,21 +77,26 @@ settingsToggle?.addEventListener("click", (e) => {
   e.stopPropagation();
   toggleAccessMenu();
 });
+
 accessClose?.addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
   closeAccessMenu();
 });
+
 accessMenu?.addEventListener("click", (e) => e.stopPropagation());
+
 document.addEventListener("click", (e) => {
   if (settingsWrap && !settingsWrap.contains(e.target)) closeAccessMenu();
 });
+
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeAccessMenu();
     if (dialog?.open) dialog.close();
   }
 });
+
 themeToggle?.addEventListener(
   "click",
   runAndClose(() =>
@@ -94,6 +107,7 @@ themeToggle?.addEventListener(
     )
   )
 );
+
 fontInc?.addEventListener(
   "click",
   runAndClose(() =>
@@ -102,6 +116,7 @@ fontInc?.addEventListener(
     )
   )
 );
+
 fontDec?.addEventListener(
   "click",
   runAndClose(() =>
@@ -110,6 +125,7 @@ fontDec?.addEventListener(
     )
   )
 );
+
 speakBtn?.addEventListener(
   "click",
   runAndClose(() => {
@@ -120,6 +136,7 @@ speakBtn?.addEventListener(
     window.speechSynthesis.speak(u);
   })
 );
+
 stopSpeakBtn?.addEventListener(
   "click",
   runAndClose(() => window.speechSynthesis.cancel())
@@ -130,6 +147,7 @@ function normalizeSeed(seed) {
   const focusList = Object.entries(focus)
     .filter(([, v]) => !!v)
     .map(([k]) => k.replace(/_/g, " "));
+
   return {
     id: seed.id,
     name: seed.nombre || seed.name || "Semilla",
@@ -157,6 +175,7 @@ async function loadSeeds() {
       SEEDS = [];
     }
   }
+
   fillFilters();
   fillSeedSelect();
   renderSeeds();
@@ -168,6 +187,7 @@ function uniqueCategories() {
     (a, b) => a.localeCompare(b, "es")
   );
 }
+
 function fillFilters() {
   categoryFilter.innerHTML = '<option value="">Todas las categorías</option>';
   uniqueCategories().forEach((cat) => {
@@ -177,6 +197,7 @@ function fillFilters() {
     categoryFilter.appendChild(opt);
   });
 }
+
 function fillSeedSelect() {
   seedSelect.innerHTML = '<option value="">Seleccionar...</option>';
   SEEDS.forEach((seed) => {
@@ -186,9 +207,11 @@ function fillSeedSelect() {
     seedSelect.appendChild(opt);
   });
 }
+
 function filteredSeeds() {
   const q = (searchInput.value || "").trim().toLowerCase();
   const c = categoryFilter.value;
+
   return SEEDS.filter((seed) => {
     const okCategory = !c || seed.category === c;
     const haystack = [seed.name, seed.category, seed.description, seed.project]
@@ -198,9 +221,11 @@ function filteredSeeds() {
     return okCategory && okSearch;
   });
 }
+
 function renderSeeds() {
   const items = filteredSeeds();
   seedGrid.innerHTML = "";
+
   items.forEach((seed) => {
     const card = document.createElement("article");
     card.className = "seed-card";
@@ -212,13 +237,15 @@ function renderSeeds() {
         <p class="seed-desc">${seed.description}</p>
         <div class="seed-meta"><span>Dificultad: ${seed.difficulty}</span></div>
         <button class="secondary-btn seed-open" type="button">Ver ficha</button>
-      </div>`;
+      </div>
+    `;
     card
       .querySelector(".seed-open")
       .addEventListener("click", () => openSeedDialog(seed));
     seedGrid.appendChild(card);
   });
 }
+
 function openSeedDialog(seed) {
   dialogContent.innerHTML = `
     <div class="dialog-layout">
@@ -233,15 +260,16 @@ function openSeedDialog(seed) {
         <p><strong>Proyecto / uso pedagógico:</strong> ${seed.project}</p>
         <p><strong>Dificultad:</strong> ${seed.difficulty}</p>
         <p><strong>Foco de investigación:</strong> ${
-          seed.researchFocus.length
-            ? seed.researchFocus.join(", ")
-            : "Sin datos"
+          seed.researchFocus.length ? seed.researchFocus.join(", ") : "Sin datos"
         }</p>
       </div>
-    </div>`;
+    </div>
+  `;
   dialog.showModal();
 }
+
 closeDialog?.addEventListener("click", () => dialog.close());
+
 dialog?.addEventListener("click", (e) => {
   const rect = dialog.getBoundingClientRect();
   const inside =
@@ -259,9 +287,11 @@ function getLogs() {
     return [];
   }
 }
+
 function setLogs(logs) {
   localStorage.setItem(LS_LOGS, JSON.stringify(logs));
 }
+
 function renderLogs() {
   const logs = getLogs();
   logTableBody.innerHTML = "";
@@ -271,11 +301,80 @@ function renderLogs() {
     logTableBody.appendChild(tr);
   });
 }
-logForm?.addEventListener("submit", (e) => {
+
+function getActiveUser() {
+  try {
+    if (window.currentUser && typeof window.currentUser === "object") {
+      return {
+        id: window.currentUser.id || "",
+        email: window.currentUser.email || "",
+        name: window.currentUser.name || window.currentUser.full_name || ""
+      };
+    }
+
+    const lsCandidates = [
+      "user",
+      "currentUser",
+      "profile",
+      "peve_user",
+      "session_user"
+    ];
+
+    for (const key of lsCandidates) {
+      const raw = localStorage.getItem(key);
+      if (!raw) continue;
+      try {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object") {
+          return {
+            id: parsed.id || parsed.user_id || "",
+            email: parsed.email || "",
+            name: parsed.name || parsed.full_name || parsed.display_name || ""
+          };
+        }
+      } catch {}
+    }
+
+    return { id: "", email: "", name: "" };
+  } catch {
+    return { id: "", email: "", name: "" };
+  }
+}
+
+async function saveLogToGoogleSheets(payload) {
+  if (!SHEETS_WEBAPP_URL || SHEETS_WEBAPP_URL.includes("PEGA_AQUI")) {
+    console.warn("Falta configurar SHEETS_WEBAPP_URL");
+    return { ok: false, skipped: true };
+  }
+
+  try {
+    const res = await fetch(SHEETS_WEBAPP_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const text = await res.text();
+    try {
+      return JSON.parse(text);
+    } catch {
+      return { ok: res.ok, raw: text };
+    }
+  } catch (error) {
+    console.error("Error enviando a Google Sheets:", error);
+    return { ok: false, error: String(error) };
+  }
+}
+
+logForm?.addEventListener("submit", async (e) => {
   e.preventDefault();
+
   const seed = SEEDS.find((s) => s.id === seedSelect.value);
-  const logs = getLogs();
-  logs.unshift({
+  const user = getActiveUser();
+
+  const entry = {
     fecha: document.getElementById("dateInput").value,
     semilla: seed?.name || seedSelect.value,
     equipo: document.getElementById("teamInput").value,
@@ -283,15 +382,59 @@ logForm?.addEventListener("submit", (e) => {
     altura: document.getElementById("heightInput").value,
     hojas: document.getElementById("leavesInput").value,
     observacion: document.getElementById("obsInput").value,
-  });
+  };
+
+  const logs = getLogs();
+  logs.unshift(entry);
   setLogs(logs);
   renderLogs();
-  logForm.reset();
+
+  const payload = {
+    user_id: user.id || "",
+    user_email: user.email || "",
+    user_name: user.name || "",
+    fecha: entry.fecha,
+    semilla: entry.semilla,
+    equipo: entry.equipo,
+    etapa: entry.etapa,
+    altura: entry.altura,
+    hojas: entry.hojas,
+    observacion: entry.observacion,
+    origen: "BANCO_SEMILLA"
+  };
+
+  const submitBtn = logForm.querySelector('button[type="submit"]');
+  const originalText = submitBtn ? submitBtn.textContent : "";
+
+  try {
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Guardando...";
+    }
+
+    const remoteResult = await saveLogToGoogleSheets(payload);
+
+    if (remoteResult?.ok) {
+      alert("Registro guardado en la bitácora y enviado a Google Sheets.");
+    } else if (remoteResult?.skipped) {
+      alert("Registro guardado localmente. Falta configurar la URL de Google Sheets.");
+    } else {
+      alert("Registro guardado localmente, pero falló el envío a Google Sheets.");
+    }
+  } finally {
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText || "Guardar registro";
+    }
+    logForm.reset();
+  }
 });
+
 exportBtn?.addEventListener("click", () => {
   const rows = [
     ["Fecha", "Semilla", "Equipo", "Etapa", "Altura", "Hojas", "Observación"],
   ];
+
   getLogs().forEach((r) =>
     rows.push([
       r.fecha,
@@ -303,11 +446,13 @@ exportBtn?.addEventListener("click", () => {
       r.observacion,
     ])
   );
+
   const csv = rows
     .map((r) =>
       r.map((v) => `"${String(v || "").replaceAll('"', '""')}"`).join(",")
     )
     .join("\n");
+
   const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -315,10 +460,12 @@ exportBtn?.addEventListener("click", () => {
   a.click();
   URL.revokeObjectURL(a.href);
 });
+
 clearBtn?.addEventListener("click", () => {
   localStorage.removeItem(LS_LOGS);
   renderLogs();
 });
+
 searchInput?.addEventListener("input", renderSeeds);
 categoryFilter?.addEventListener("change", renderSeeds);
 
