@@ -12,30 +12,40 @@
 </head>
 <body>
   <header class="hero">
-    <nav class="topbar container">
-      <div class="brand">
-        <div class="brand-mark">🌱</div>
-        <div>
-          <strong>Banco de Semillas</strong>
-          <small>Invernadero escolar · seguimiento e investigación</small>
-        </div>
+  <nav class="topbar container">
+  <div class="brand">
+    <div class="brand-mark">🌱</div>
+    <div>
+      <strong>Banco de Semillas</strong>
+      <small>Invernadero escolar · seguimiento e investigación</small>
+    </div>
+  </div>
+
+  <div class="nav-actions" id="navActions">
+    <a class="ghost-btn nav-link" href="#catalogo">Catálogo</a>
+    <a class="ghost-btn nav-link" href="#bitacora">Bitácora</a>
+    <a class="ghost-btn nav-link" href="#investigacion">Investigación</a>
+
+    <div id="settingsWrap" class="settings-wrap">
+      <button
+        id="settingsToggle"
+        class="settings-btn"
+        aria-expanded="false"
+        aria-controls="accessMenu"
+        aria-label="Abrir opciones de accesibilidad"
+      >⚙️</button>
+
+      <div id="accessMenu" class="access-menu" hidden>
+        <button class="menu-item access-close" id="accessClose" aria-label="Cerrar opciones">✕ Cerrar</button>
+        <button class="menu-item" id="themeToggle">🌓 Tema</button>
+        <button class="menu-item" id="fontInc">A+</button>
+        <button class="menu-item" id="fontDec">A−</button>
+        <button class="menu-item" id="speakBtn">🗣️ Leer</button>
+        <button class="menu-item danger" id="stopSpeakBtn">⏹ Detener</button>
       </div>
-      <div class="nav-actions">
-        <a class="ghost-btn" href="#catalogo">Catálogo</a>
-        <a class="ghost-btn" href="#bitacora">Bitácora</a>
-        <a class="ghost-btn" href="#investigacion">Investigación</a>
-        <div class="settings-wrap" id="settingsWrap">
-          <button id="settingsToggle" class="settings-btn" aria-expanded="false" aria-controls="accessMenu" aria-label="Abrir opciones de accesibilidad">⚙️</button>
-          <div id="accessMenu" class="access-menu" hidden>
-            <button class="menu-item" type="button" id="themeToggle">🌓 Tema</button>
-            <button class="menu-item" type="button" id="fontInc">A+</button>
-            <button class="menu-item" type="button" id="fontDec">A−</button>
-            <button class="menu-item" type="button" id="speakBtn">🗣️ Leer</button>
-            <button class="menu-item danger" type="button" id="stopSpeakBtn">⏹ Detener</button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
     <section class="container hero-grid">
       <div>
         <span class="eyebrow">Proyecto pedagógico para estudiantes</span>
