@@ -23,7 +23,7 @@ const clearBtn = document.getElementById("clearBtn");
 const LS_THEME = "seedbank_theme";
 const LS_SCALE = "seedbank_scale";
 const LS_LOGS = "seedbank_logs";
-const SHEETS_WEBAPP_URL = "PEGA_AQUI_TU_URL_DE_APPS_SCRIPT";
+const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzLznXiGpy6sYgHRnU83eMXqK1NfIlsP4jTdk349sTIDuIcQniOjYhUIQjqe4qUrJVVXQ/exec";
 
 let SEEDS = [];
 
